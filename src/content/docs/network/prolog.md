@@ -2,13 +2,11 @@
 title: Prolog
 description: Tutorial jaringan
 ---
+## Pendahuluan
+Jaringan komputer merupakan tulang punggung bagi operasional sebuah kantor, memungkinkan berbagai perangkat untuk saling bertukar data dan informasi. Dalam sebuah kantor, pertukaran data antar komputer satu dengan komputer lainnya dapat dilakukan melalui kabel, maupun melalui jaringan nirkabel (wireless).
 
-## Definisi
-**Jaringan komputer** (computer network) adalah jejaring telekomunikasi yang memungkinkan antar komputer untuk saling berkomunikasi dengan bertukar data.
+Peran internet menjadi sangat besar ketika pertkaran data dilakukan oleh komputer yang memiliki lokasi berbeda. Tapi ternyata menjadi salah kaprah ketika pertukaran data dalam 1 area kantor yang mestinya hanya di lakukan secara lokal, tapi malah menggunakan internet.
 
+Definisi sederhana dari penggunaan internet adalah: kita tidak bisa mengkses secara lokal sumber data. Contoh wikipedia. Jika kita ingin mencari reffresi artikel, tentunya kita harus menggunakan internet untuk mengakses sumber data (server) wikipedi, karena kita berada dalam 1 lokal jaringan dengan server wikipedia.
 
-**Jaringan lokal (LAN)** [Local Area Network]: jaringan komputer yang terbatas pada area lokal, seperti kantor, sekolah, atau rumah. LAN biasanya menggunakan kabel atau koneksi nirkabel untuk menghubungkan perangkat-perangkat dalam jaringan.
-
-**Jaringan Luas (WAN)** [Wide Area Network]: adalah jaringan komputer yang mencakup area yang lebih luas, seperti kota, negara, atau bahkan seluruh dunia. WAN menghubungkan berbagai jaringan lokal dan memungkinkan komunikasi antar jaringan yang berbeda. Internet adalah contoh terbesar dari jaringan WAN, yang menghubungkan jutaan komputer di seluruh dunia.
-
-**Internet** (interconnected network; arti harfiah: "jaringan yang saling berhubungan") adalah sistem jaringan komputer yang saling terhubung secara global dengan menggunakan paket protokol internet (TCP/IP) untuk menghubungkan perangkat di seluruh dunia. 
+***pertukaran data*** input dan akses data masih bisa di lakukan secara lokal (offline), hindari pertukaran data via internet !
