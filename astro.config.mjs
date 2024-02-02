@@ -42,6 +42,7 @@ export default defineConfig({
       }]
     }]
   })],
-  output: "server",
+  site: "https://saiunadi.my.id",
+  output: "hybrid",
   adapter: cloudflare()
 });
