@@ -23,7 +23,7 @@ apt install htop
 ```sh
 htop
 ```
-![htop](/public/images/linux/htop.png "htop")
+![htop](/images/linux/htop.png "htop")
 
 
 ## iftop
@@ -33,5 +33,5 @@ apt install iftop
 ```sh
 iftop
 ```
-![iftop](/public/images/linux/iftop.png "iftop")
+![iftop](/images/linux/iftop.png "iftop")
 

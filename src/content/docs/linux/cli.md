@@ -38,7 +38,7 @@ Server nantinya di akses oleh perangkat lain yang mungkin berlokasi pada timezon
 ```sh
 timedatectl
 ```
-![timedatectl](/public/images/linux/timedatectl.png "timedatectl")
+![timedatectl](/images/linux/timedatectl.png "timedatectl")
 
 ```sh 
 ls -l /etc/localtime
@@ -55,7 +55,7 @@ ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 ```sh
 timedatectl
 ```
-![Asia Jakarta](/public/images/linux/asia-jakarta.png "timedatectl")
+![Asia Jakarta](/images/linux/asia-jakarta.png "timedatectl")
 
 Reffresi:
 
