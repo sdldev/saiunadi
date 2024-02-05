@@ -19,7 +19,8 @@ export default defineConfig({
         label: 'Create doc',
         link: '/start/create/'
       }]
-    }, {
+    }, 
+    {
       label: 'Network',
       items: [{
         label: 'Index',
@@ -40,6 +41,28 @@ export default defineConfig({
         label: 'Maintanance',
         link: '/network/maintanance/'
       }]
+    }
+    , 
+    {
+      label: 'Linux',
+      items: [
+        {
+        label: 'Prolog',
+        link: '/linux/prolog/'
+      }, 
+      {
+        label: 'CLI Linux',
+        link: '/linux/cli/'
+      }, 
+      {
+        label: 'Database',
+        link: '/linux/database/'
+      }      , 
+      {
+        label: 'Monitor',
+        link: '/linux/monitor/'
+      }
+    ]
     }]
   })],
   site: "https://saiunadi.my.id",
