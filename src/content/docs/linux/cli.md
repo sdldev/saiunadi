@@ -56,3 +56,8 @@ ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 timedatectl
 ```
 ![Asia Jakarta](/src/assets/linux/asia-jakarta.png "timedatectl")
+
+Reffresi:
+
+- [linux-command-reference-guide](https://community.sophos.com/intercept-x-endpoint/f/recommended-reads/142324/linux-command-reference-guide)
+- [Linux-Bash-Commands](https://github.com/trinib/Linux-Bash-Commands/blob/main/README.md)
