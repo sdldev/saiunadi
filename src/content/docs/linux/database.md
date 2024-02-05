@@ -48,7 +48,7 @@ systemctl restart mariadb
 ```sh
 systemctl status mariadb
 ```
-![mariadb-status](/src/assets/linux/mariadb-status.png "mariadb-status")
+![mariadb-status](/public/images/linux/mariadb-status.png "mariadb-status")
 
 
 ## Manage
@@ -82,7 +82,7 @@ dengan
 bind-address = 0.0.0.0
 ``
 
-![mariadb-bind](/src/assets/linux/mariadb-bind.png "mariadb-bind")
+![mariadb-bind](/public/images/linux/mariadb-bind.png "mariadb-bind")
 
 
 ```sh
