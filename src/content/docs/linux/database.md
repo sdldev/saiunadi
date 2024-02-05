@@ -18,11 +18,16 @@ MySql lebih fleksibel dan untuk menjalankannya kita tidak membutuhkan GUI. Pilih
 apt update && apt upgrade -y
 ```
 
-### Show
+### keyrings
 
 ```sh
 sudo apt-get install apt-transport-https curl
 sudo mkdir -p /etc/apt/keyrings
 sudo curl -o /etc/apt/keyrings/mariadb-keyring.pgp 'https://mariadb.org/mariadb_release_signing_key.pgp'
 
+```
+
+```sh
+apt-get update
+apt-get install mariadb-server
 ```
