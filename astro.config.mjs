@@ -57,10 +57,15 @@ export default defineConfig({
       {
         label: 'Database',
         link: '/linux/database/'
-      }      , 
+      }, 
       {
         label: 'Monitor',
         link: '/linux/monitor/'
+      }
+      , 
+      {
+        label: 'Hardening',
+        link: '/linux/hardening/'
       }
     ]
     }]
