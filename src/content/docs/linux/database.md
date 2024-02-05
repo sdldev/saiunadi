@@ -93,8 +93,40 @@ quit
 
 Maksudnya database dengan nama ``dbtest`` bisa diaksess oleh ``dbuser`` dari segment ip 10.10.20.0/24 menggunakan password ``password``
 
+## ADMINER
+```sh 
+apt install adminer
+```
+
+```
+cd /etc/apache2/conf-available
+sudo ln -s ../../adminer/apache.conf adminer.conf
+sudo a2enconf adminer
+sudo service apache2 reload
+```
+
+## FIREWALL
+
+```sh
+sudo apt-get install ufw -y
+```
+
+```
+sudo ufw allow 180.254.20.1  to any port 80
+ufw allow from 10.10.20.0/24 to any port 3306
+```
+
+```sh
+ufw enable
+reboot
+```
+jika ada salah konfigurasi, maka ssh atau aksess adminer di tolak
+
+
 :::tip[TIPS?]
 - Password root DB sebaiknya berbeda dengan password untuk login linux 
 - user root DB tidak diberikan akses ke IP lain. Cukup localhost
 - penggunaan % sebaiknya pada segment ip yg di butuhkan saja, atau bahkan hanya pada 1 ip applikasi yang tehubung pada DB
 :::
+
+
