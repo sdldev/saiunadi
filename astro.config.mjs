@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import node from "@astrojs/node";
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,35 +12,69 @@ export default defineConfig({
     },
     sidebar: [{
       label: 'Doc',
-      items: [{ label: 'Start', link: '/start/intro/' },
-      { label: 'Create doc', link: '/start/create/' }]
-    },
-    {
+      items: [{
+        label: 'Start',
+        link: '/start/intro/'
+      }, {
+        label: 'Create doc',
+        link: '/start/create/'
+      }]
+    }, {
       label: 'Network',
-      items: [{ label: 'Index', link: '/network/prolog/' },
-      { label: 'Definisi', link: '/network/definisi/' },
-      { label: 'Setting Mikrotik', link: '/network/mikrotik/' },
-      { label: 'VPN', link: '/network/vpn/' },
-      { label: 'Monitoring', link: '/network/monitoring/' },
-      { label: 'Maintanance', link: '/network/maintanance/' }]
-    },
-    {
+      items: [{
+        label: 'Index',
+        link: '/network/prolog/'
+      }, {
+        label: 'Definisi',
+        link: '/network/definisi/'
+      }, {
+        label: 'Setting Mikrotik',
+        link: '/network/mikrotik/'
+      }, {
+        label: 'VPN',
+        link: '/network/vpn/'
+      }, {
+        label: 'Monitoring',
+        link: '/network/monitoring/'
+      }, {
+        label: 'Maintanance',
+        link: '/network/maintanance/'
+      }]
+    }, {
       label: 'Linux',
-      items: [{ label: 'Prolog', link: '/linux/prolog/' },
-      { label: 'CLI Linux', link: '/linux/cli/' },
-      { label: 'SSH Remote', link: '/linux/remote/' },
-      { label: 'Timezone', link: '/linux/timezone/' },
-      { label: 'Monitor', link: '/linux/monitor/' },
-      { label: 'Hardening', link: '/linux/hardening/' }]
-    },
-    {
+      items: [{
+        label: 'Prolog',
+        link: '/linux/prolog/'
+      }, {
+        label: 'CLI Linux',
+        link: '/linux/cli/'
+      }, {
+        label: 'SSH Remote',
+        link: '/linux/remote/'
+      }, {
+        label: 'Timezone',
+        link: '/linux/timezone/'
+      }, {
+        label: 'Monitor',
+        link: '/linux/monitor/'
+      }, {
+        label: 'Hardening',
+        link: '/linux/hardening/'
+      }]
+    }, {
       label: 'Server',
-      items: [{ label: 'Prolog', link: '/server/prolog/' },
-      { label: 'Database', link: '/server/database/' },
-      { label: 'lemp', link: '/server/lemp/' }]
+      items: [{
+        label: 'Prolog',
+        link: '/server/prolog/'
+      }, {
+        label: 'Database',
+        link: '/server/database/'
+      }, {
+        label: 'lemp',
+        link: '/server/lemp/'
+      }]
     }]
-  })],
-  
+  }), sitemap()],
   site: "https://saiunadi.my.id",
   output: "hybrid",
   adapter: node({
