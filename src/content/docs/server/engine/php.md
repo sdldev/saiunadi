@@ -23,5 +23,5 @@ sudo apt update
 ```
 ```sh
 
-sudo apt install php php-fpm php-mysql php-mbstring php-xml php-bcmath php-curl php8.2-{fpm,cli,common,gd,intl,zip,xsl} -y
+sudo apt install sudo apt install php-common php8.2 php8.2-{fpm,cli,common,opcache,readline,dom,zip,xml,curl,gd,mysql} -y
 
