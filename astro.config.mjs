@@ -63,20 +63,22 @@ export default defineConfig({
       }]
     }, {
       label: 'Server',
-      items: [{
-        label: 'Prolog',
-        link: '/server/prolog/'
-      }, {
-        label: 'Database',
-        link: '/server/database/'
-      }, {
-        label: 'lemp',
-        link: '/server/lemp/'
+      items: [{ label: 'Prolog', link: '/server/prolog/' },
+      {
+        label: 'engine',
+        items: [
+          { label: 'Mariadb', link: '/server/engine/mariadb/' },
+          { label: 'Nginx', link: '/server/engine/nginx/' },
+          { label: 'PHP', link: '/server/engine/php/' },
+          { label: 'Composer', link: '/server/engine/composer/' },
+
+        ]
+
       }]
     }]
   }), sitemap()],
   site: "https://saiunadi.my.id",
-  output: "static",
+  output: "hybrid",
   adapter: node({
     mode: "standalone"
   })

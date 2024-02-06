@@ -1,6 +1,6 @@
 ---
-title: Database
-description: Database linux
+title: MariaDB
+description: MariaDB linux
 ---
 
 Database di gunakan untuk menyimpan data dari sebuah web. Disini kita akan fokus pada MySql (MariDB lebih tepatnya). 
@@ -110,22 +110,25 @@ sudo a2enconf adminer
 sudo service apache2 reload
 ```
 
-## FIREWALL
+## DUMP / EXPORT
 
+### Bakup
+Bakup semua db
 ```sh
-sudo apt-get install ufw -y
+mariadb-dump -u root -p -x -A > /path/databasebackupname.sql
 ```
-
-```
-sudo ufw allow 180.254.20.1  to any port 80
-ufw allow from 10.10.20.0/24 to any port 3306
-```
-
+Bakup  hanya 1 database berdasarkan nama
 ```sh
-ufw enable
-reboot
+mariadb-dump --user=databaseuser --password --lock-tables --databases databasename > /path/databasebackupname.sql
 ```
-jika ada salah konfigurasi, maka ssh atau aksess adminer di tolak
+
+
+### IMPORT
+```sh
+mysql -u root -p newdatabasename < databasesource.sql
+```
+
+## OPTIMATION
 
 
 :::tip[TIPS?]
