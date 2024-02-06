@@ -53,6 +53,11 @@ systemctl status mariadb
 
 ## Manage
 
+### Secure First
+```sh
+sudo mysql_secure_installation
+
+```
 ### Create User and db
 
 ```sh

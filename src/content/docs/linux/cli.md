@@ -26,36 +26,29 @@ ssh root@xxx.xxx.x.xx
 xxx.xxx.x.xx merupakan ip tujuan
 
 
-### Setup
+## Setup
 
-#### Update & Upgrade
-```sh
+
+### Update & upgrade
+
+```
 apt update && apt upgrade -y
 ```
-#### Set timezone
-Server nantinya di akses oleh perangkat lain yang mungkin berlokasi pada timezone berbeda. Selain itu, secara default, server Time zone: Etc/UTC (UTC, +0000). Terdapat perbedaan +7 antara Asia/Jakarta dengan UTC. Jika kita tidak melakukan setting bagian ini, maka waktu yang tercatat pada database server akan mengikuti waktu UTC.
 
+### Install Basic
+
+``` js
+sudo apt install git curl wget nano unzip sudo -y
+```
+
+## Create User
 ```sh
-timedatectl
-```
-![timedatectl](/images/linux/timedatectl.png "timedatectl")
-
-```sh 
-ls -l /etc/localtime
+adduser user_name
+usermod -aG sudo user_name
+usermod -aG www-data user_name
+su - user_name
 ```
 
-```sh
-timedatectl set-timezone Asia/Jakarta
-```
-
-```sh
-ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
-```
-
-```sh
-timedatectl
-```
-![Asia Jakarta](/images/linux/asia-jakarta.png "timedatectl")
 
 Reffresi:
 
