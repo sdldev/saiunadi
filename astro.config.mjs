@@ -78,7 +78,7 @@ export default defineConfig({
     }]
   }), sitemap()],
   site: "https://saiunadi.my.id",
-  output: "hybrid",
+  output: "static",
   adapter: node({
     mode: "standalone"
   })
